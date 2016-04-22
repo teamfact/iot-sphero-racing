@@ -1,0 +1,23 @@
+{
+  "name": "iot-sphero-racing-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "TEAMFACT GmbH",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamfact/iot-sphero-racing-client"
+  },
+  
+  "dependencies": {
+    "xbox-controller": "0.7.0",
+    "sphero": "0.8.3",
+    "ws": "1.0.1"
+  },
+  
+  "license": "MIT"
+}
