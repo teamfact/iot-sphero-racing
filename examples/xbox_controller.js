@@ -18,15 +18,6 @@ var speed = 0,
 // Let's roll
 sphero.connect(function (){
   
-  // Enable collision detection
-  sphero.detectCollisions();
-  
-  // Give the sphero a nice color
-  controller.on('a:release', function (key) {
-    var color = Math.floor(Math.random() * (colors.length - 0));
-    sphero.color(color);
-  });
-
   // Break when pushing the left trigger
   controller.on('lefttrigger', function(position){
     if(Math.abs(position) > 0) {
@@ -43,7 +34,6 @@ sphero.connect(function (){
     if(!isBreaking) {
       speed = Math.abs(position);
     }
-
   });
   
   // Left stick is used for setting the direction.
@@ -57,6 +47,9 @@ sphero.connect(function (){
       }        
     }
   });
+  
+  // Enable collision detection
+  sphero.detectCollisions();
   
   // Rumble for half a second on collision
   sphero.on("collision", function(data) {
@@ -74,6 +67,12 @@ sphero.connect(function (){
       isCalibrating = true;
       sphero.startCalibration();
     }
+  });
+  
+  // Give the sphero a nice color
+  controller.on('a:release', function (key) {
+    var color = Math.floor(Math.random() * (colors.length - 0));
+    sphero.color(color);
   });
   
   // Finally roll the Sphero every 200ms
