@@ -6,6 +6,8 @@ Please read the related [series of blog posts ](http://scn.sap.com/community/dev
 This git repository is going to contain all the required source to code to rebuild and run the showcase.
 Currently it only contains the code described in the blog series, but it will be updated in accordance with every new post.
 
+![architecture](http://www.teamfact.com/fileadmin/teamfact/images/blog/2016/architecture.jpg "The showcase architecture")
+
 # /client
 
 The client contains the source code to control the Sphero and connect to the HCP IoT services.
