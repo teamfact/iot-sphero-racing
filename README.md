@@ -1,24 +1,26 @@
 # Introduction
 
-This is a git repository related to the 
-http://scn.sap.com/community/developer-center/cloud-platform/blog/2016/03/26/build-your-own-sphero-racing-iot-showcase-on-hcp
+This is a git repository related to the a gamificated IoT use case using SAP technolgies.
 
-# Pre-requisites 
+Please read the related [series of blog posts ](http://scn.sap.com/community/developer-center/cloud-platform/blog/2016/03/26/build-your-own-sphero-racing-iot-showcase-on-hcp) for a more detailed description of the various parts and overall architecture.
 
-1. You need to have a Sphero device
+This git repository currently contains only the code described in the blog series and is being updated with every new post.
 
-2. Xbox 360 controller
+# /client
+
+The client contains the source code to control the Sphero and connect to the HCP IoT services.
+More information can be found in under [/client/readme](https://github.com/teamfact/iot-sphero-racing/blob/master/client/REAMDE.md).
 
 # Set things up
 
-Checkout the project:
+To initially checkout the source code just enter this on the terminal:
 
-```
-	git clone git@github.com:teamfact/iot-sphero-racing-client.git
+```bash
+	git clone git@github.com:teamfact/iot-sphero-racing.git
 ```  
 
-Run the followng code to install the required dependencies: 
+More specific information will be found in the corresponding readmine files in subfolders.
 
-```
-  npm install
-```  
+## Author
+
+Author: [TEAMFACT GmbH](www.teamfact.com). info@teamfact.com
