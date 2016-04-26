@@ -1,7 +1,7 @@
 # Introduction
 
 This is the client part of the showcase containing all the code running on the edge device.
-This repository will be udpated according the current state of the blog post series.
+This repository will be udpated according to the current state of the blog post series.
 
 #Pre-requisite
 
@@ -16,7 +16,7 @@ Please use this LTS version, if you experience the same problems.
 
 #/examples
 
-The `examples` dir contains some test files, which you use to verify that everythings is working.
+The `examples` dir contains some test files, which you can use to verify that everythings is working.
 
 ## examples/race.js
 
@@ -47,8 +47,12 @@ If you successfully conntected to a Sphero, it will randomly roll around.
 
 ## examples/xbox_conroller.js
 
+The Xbox controller is being used to control the Sphero.
+You can find all the requirements in the the [official repository](https://github.com/andrew/node-xbox-controller) of the node module.
+There is a test script available in the examples directory, which you can run like this:
+
 ```
 PORT=/your/port node examples/xbox_controller.js
 ```
 
-[official repository](https://github.com/andrew/node-xbox-controller)
+
