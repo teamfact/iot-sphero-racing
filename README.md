@@ -1,6 +1,6 @@
 # Introduction
 
-This is a git repository related to the a gamificated IoT showcasae using SAP technolgies.
+This is a git repository related to a gamificated IoT showcasae using SAP technolgies.
 Please read the related [series of blog posts ](http://scn.sap.com/community/developer-center/cloud-platform/blog/2016/03/26/build-your-own-sphero-racing-iot-showcase-on-hcp) for a more detailed description of the various parts and overall architecture. There is also a [german version](http://www.teamfact.com/de/blog/2016/spielerische-iot-und-big-data-analyse/) available.
 
 This git repository is going to contain all the required source to code to rebuild and run the showcase.
@@ -24,4 +24,5 @@ More specific information can be found in the corresponding readme files in each
 ## Author
 
 [TEAMFACT GmbH](www.teamfact.com)
+
 In case you have any question or comment, please drop us a short note at: info@teamfact.com.
