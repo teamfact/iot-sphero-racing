@@ -1,6 +1,6 @@
 "use strict";
 
-var XboxController = require('../lib/xbox'),
+var XboxController = require('xbox-controller'),
     controller = new XboxController();
 
 controller.on('a:press', function (key) {
