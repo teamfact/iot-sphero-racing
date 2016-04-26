@@ -21,18 +21,22 @@ The `examples` dir contains some test files, which you use to verify that everyt
 ## examples/race.js
 
 Running this script enables you to drive a Sphero with an Xbox 360 controller.
+The button layout can be taken from the following image.
 
-![gampad](http://scn.sap.com/servlet/JiveServlet/showImage/38-140938-935275/Arbeitsfläche+2.jpg "Gamepad controls")
+![gampad](http://www.teamfact.com/fileadmin/teamfact/images/blog/2016/controller.jpg "Gamepad controls")
+
+You can run the script by entering the following line on the command prompt:
 
 ```
 PORT=/your/port node examples/racing.js
 ```
+For information on the port see the information below.
 
 ## examples/sphero.js
 
 This is a script to test, if you can connect to a Sphero.
 To connect to a Sphero, you need an active Bluetooth connection.
-On the commandline the port needs to be passed in as an ENV variable like this:
+On the command line the port needs to be passed in as an ENV variable like this:
 
 ```
 PORT=/your/port node examples/sphero.js
@@ -42,5 +46,9 @@ The port differs on Windows/OS X/Linux and for different Sphero versions. How yo
 If you successfully conntected to a Sphero, it will randomly roll around.
 
 ## examples/xbox_conroller.js
+
+```
+PORT=/your/port node examples/xbox_controller.js
+```
 
 [official repository](https://github.com/andrew/node-xbox-controller)
