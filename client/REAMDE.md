@@ -5,20 +5,30 @@ This repository will be udpated according the current state of the blog post ser
 
 #Pre-requisite
 
-The complete source code is written in Node.js. 
+The complete source code is written in Node.js. To install the required modules just run the following line:
 
 ```
 npm install
 ```
+We had some issues installing the xbox-controller module and its dependencies on other Node.js versions than 0.12.9.
+Please use this LTS version, if you experience the same problems.
 
 
-# Controlling a Sphero
+#/examples
 
-The `examples` dir currently contains 
-When running these examples, don't forget to pass the port as an ENV variable like this:
+The `examples` dir contains some test files, which you use to verify that everythings is working.
+
+## examples/sphero.js
+
+This is a script to test, if you can connect to a Sphero.
+To connect to a Sphero, you need an active Bluetooth connection.
+On the commandline the port needs to be passed in as an ENV variable like this:
 
 ```
-PORT=/your/port node examples/xbox_controller_.js
+PORT=/your/port node examples/sphero.js
 ```
+The port differs on Windows/OS X/Linux and for different Sphero versions. How you can find your port is being described in full detail in the [official Sphero SDK](https://github.com/orbotix/sphero.js).
 
-More information on how to connect to a Sphero can be found in the [official Sphero SDK](https://github.com/orbotix/sphero.js).
+If you successfully conntected to a Sphero, it will randomly roll around.
+
+## examples/xbox_conroller.js

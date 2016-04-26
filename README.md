@@ -10,7 +10,7 @@ Currently it only contains the code described in the blog series, but it will be
 
 # /client
 
-The client contains the source code to control the Sphero and connect to the HCP IoT services.
+The client contains the source code on the edge device to control the Sphero and connect to the HCP IoT services.
 More information can be found in under [/client/README.md](https://github.com/teamfact/iot-sphero-racing/blob/master/client/REAMDE.md).
 
 # Set things up
