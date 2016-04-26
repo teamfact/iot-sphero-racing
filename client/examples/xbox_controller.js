@@ -12,13 +12,12 @@ var controller = new XboxController(),
 var speed = 0,
     direction = 0,
     isBreaking = false,
-    isCalibrating = false,
-    colors = ["#1f6c7c", "#f4c51d", "#8ad0dd", "#f9e69d"];
+    isCalibrating = false;
 
 // Let's roll
 sphero.connect(function (){
   
-  // Break when pushing the left trigger
+  // Brake when pushing the left trigger
   controller.on('lefttrigger', function(position){
     if(Math.abs(position) > 0) {
       speed = 0;
@@ -29,7 +28,6 @@ sphero.connect(function (){
   });
 
   // Use analog trigger to set the speed.
-  // Speed values go from 0 to 255 on both, controller and Sphero.
   controller.on('righttrigger', function(position){
     if(!isBreaking) {
       speed = Math.abs(position);
@@ -69,9 +67,9 @@ sphero.connect(function (){
     }
   });
   
-  // Give the sphero a nice color
+  // Give the sphero a random color
   controller.on('a:release', function (key) {
-    var color = Math.floor(Math.random() * (colors.length - 0));
+    var color = '#'+('00000'+(Math.random()*16777216<<0).toString(16)).substr(-6);
     sphero.color(color);
   });
   
